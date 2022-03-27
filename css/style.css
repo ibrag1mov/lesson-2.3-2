@@ -1,13 +1,79 @@
-*,
-*::after,
-*::before {
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  min-height: 100vh;
+body{
+  background-color: rgb(40, 63, 85);
+}
+
+.content{
+  position: absolute;
+  width: 370px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  padding-top: 70px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px 2px #181818;
+  background-image: url('../img/sohil.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.content h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: aquamarine;
+  font-size: 20px;
+}
+
+.italic{
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+}
+
+.info{
+  position: absolute;
+  width: 300px;
+  padding: 60px 30px 0 30px;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: transparent;
+  transition-property: color;
+  transition-duration: .5s;
+
+}
+
+.content:hover{
+ opacity: 0.7;
+}
+.content:hover .info{
+  color: white;
+}
+
+.data{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
   display: flex;
-  flex-direction: column;
-  font-family: sans-serif;
+}
+.data p{
+  color: white;
+  padding-left: 10px;
+}
+.bx{
+  color: rgb(255, 183, 0);
+  padding-right: 2px;
 }
